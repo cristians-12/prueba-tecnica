@@ -38,7 +38,7 @@ export function App () {
       {fact && <p className='my-2 font-sans'>{fact}</p>}
       {imageUrl && <img src={imageUrl} alt='cat' className='w-25 rounded-lg text-center' />}
       <br />
-      <input type='text' name='palabra' value={valor} onChange={nuevoFact} placeholder='Ingrese una palabra' className='p-2 rounded-lg' />
+      <input type='text' name='palabra' value={valor} onChange={nuevoFact} placeholder='Ingrese una palabra' className='p-2 rounded-lg w-100' />
     </>
   )
 }
