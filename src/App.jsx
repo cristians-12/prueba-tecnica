@@ -34,8 +34,8 @@ export function App () {
 
   return (
     <>
-      <h1 className='my-5'>Cat Fact app</h1>
-      {fact && <p className='my-2'>{fact}</p>}
+      <h1 className='my-5 font-sans'>Cat Fact app</h1>
+      {fact && <p className='my-2 font-sans'>{fact}</p>}
       {imageUrl && <img src={imageUrl} alt='cat' className='w-25 rounded-lg text-center' />}
       <br />
       <input type='text' name='palabra' value={valor} onChange={nuevoFact} placeholder='Ingrese una palabra' className='p-2 rounded-lg' />
