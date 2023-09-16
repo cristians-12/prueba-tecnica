@@ -34,7 +34,7 @@ export function App () {
 
   return (
     <>
-      <h1 className='my-5'>Cat Fact generator app</h1>
+      <h1 className='my-5'>Cat Fact app</h1>
       {fact && <p className='my-2'>{fact}</p>}
       {imageUrl && <img src={imageUrl} alt='cat' className='w-25 rounded-lg text-center' />}
       <br />
