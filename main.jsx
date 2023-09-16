@@ -1,8 +1,8 @@
-import {createRoot} from 'react-dom/client'
+import { createRoot } from 'react-dom/client'
+import { App } from './src/App'
+const root = createRoot(document.getElementById('app'))
 
-const root = createRoot(document.getElementById("app"))
-
-root.render(<p>Si</p>)
+root.render(<App />)
 
 // import './style.css'
 // import javascriptLogo from './javascript.svg'
