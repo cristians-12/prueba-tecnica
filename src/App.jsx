@@ -22,7 +22,6 @@ export function App () {
           .then(res => res.json())
           .then(respuesta => {
             const { url } = respuesta
-            console.log(url)
             setimageUrl(`https://cataas.com${url}`)
           })
       })
@@ -35,11 +34,11 @@ export function App () {
 
   return (
     <>
-      <h1>App de gatos con API</h1>
-      {fact && <p>{fact}</p>}
-      {imageUrl && <img src={imageUrl} alt='cat' />}
+      <h1 className='my-5'>App de gatos con API</h1>
+      {fact && <p className='my-2'>{fact}</p>}
+      {imageUrl && <img src={imageUrl} alt='cat' className='w-25 rounded-lg text-center' />}
       <br />
-      <input type='text' name='palabra' value={valor} onChange={nuevoFact} />
+      <input type='text' name='palabra' value={valor} onChange={nuevoFact} placeholder='Ingrese una palabra' />
     </>
   )
 }
